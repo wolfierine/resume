@@ -66,18 +66,20 @@ $(document).ready(function(){
 	  strings: ["looove", "was born"],
 	  typeSpeed: 300,
 	  backSpeed: 100,
-	  fadeOut: true,
+	  fadeOut: false,
 	  loop: true,
 	  cursorChar: '_',
-      shuffle: true,
+      shuffle: false,
 	});
 
-	var typed2 = new Typed('.console-type', {
-	    strings: ['npm skills^1000\n `HTML5` ^2000\n `Fetching from source...`'],
-	   	typeSpeed: 40,
+
+	const consoleTyped = new Typed('.console-type', {
+	    strings: ["npm install -g skills  ^1500\n", "running.. ` \n\n` `HTML5 \n` `CSS3 \n` `SASS \n` `Javascript \n` `jQuery \n` `React \n` `RWD \n` `Wordpress \n` ` \n` "],
+	   	typeSpeed: 100,
     	backSpeed: 0,
-    	loop: false
+    	loop: true
 	});
+
 
 
 

@@ -618,7 +618,8 @@ body::-webkit-scrollbar-thumb {
     display: none; }
   #features .iphone-container {
     position: relative;
-    perspective: 800px; }
+    perspective: 800px;
+    height: 580px; }
     #features .iphone-container::after {
       content: "";
       position: absolute;
@@ -782,6 +783,11 @@ body::-webkit-scrollbar-thumb {
 #skills .section-title::before,
 #skills .section-title::after{
     display: none;
+}
+.console-type{
+  font-family: monospace;
+  font-size: 18px;
+  white-space: pre;
 }
 
 /* PORTFOLIO */
