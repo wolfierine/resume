@@ -44,6 +44,10 @@
 @media screen and (min-width: 1000px){
 	.copyrights{
 		clip-path: unset;
+		padding: 10px 0;
+	}
+	.copyrights .socials{
+		margin-bottom: 0;
 	}
 	.copyrights p br{
 		display: none;
@@ -72,12 +76,16 @@
 	.intro .btn{
 		margin: 0 25px 0 0;
 	}
-
+	
 }
 
 @media screen and (min-width: 1200px){
 	#about{
 		padding: 50px 0;
+	}
+	.about-me{
+		width: 67%;
+  		margin-left: auto;
 	}
 	#about .row{
 		justify-content: space-between;
@@ -97,7 +105,7 @@
 		margin-bottom: -10px;
 	}
 	#about .btn{
-	  	display: inline-block;
+	  	display: table;
 	}
 	#portfolio{
 		display: flex;
@@ -212,7 +220,7 @@
   		clip-path: unset; 
   	}
 	 #features .text-green{
-	    color: #a5be00; 
+	    color: var(--greenColor); 
 	}
 	.circles-container{
 		right: 0;

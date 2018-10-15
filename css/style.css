@@ -218,7 +218,7 @@ p {
   #preloader .bal {
     width: 15px;
     height: 15px;
-    background: #a5be00;
+    background: var(--greenColor);
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -281,7 +281,7 @@ body::-webkit-scrollbar-thumb {
   background: var(--greenColor) }
 
 .menu-toggle {
-  position: fixed;
+  position: absolute;
   top: 30px;
   right: 30px;
   z-index: 9999;
@@ -298,7 +298,8 @@ body::-webkit-scrollbar-thumb {
       -ms-flex-pack: center;
           justify-content: center;
   border: 1px solid #d6dbe2;
-  text-align: center; }
+  text-align: center;
+  transition: .3s; }
   .menu-toggle .line {
     position: relative; }
     .menu-toggle .line, .menu-toggle .line::before, .menu-toggle .line::after {
@@ -587,7 +588,7 @@ body::-webkit-scrollbar-thumb {
 
 #features {
   padding: 50px 0 200px;
-  background-color: #a5be00;
+  background-color: var(--greenColor);
   color: #fff;
   clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%); }
   #features .text-green{
@@ -757,6 +758,10 @@ body::-webkit-scrollbar-thumb {
 }
 #about .col{
   width: 100%;
+}
+.about-me{
+  margin: 100px 0 50px;
+  text-align: justify;
 }
 .unicorn{
   padding-top: 100px;

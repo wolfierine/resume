@@ -16,6 +16,21 @@ $(document).ready(function(){
 		body.removeClass("hide");
 	});
 
+	const header = $(".page-header");
+	const revealPos = header.offset().top + header.height();
+	$(window).on("scroll", function(){
+		let winPos = $(this).scrollTop();
+		if(winPos > revealPos){
+			hamburger.css({
+				'position' : 'fixed'
+			})
+		} else {
+			hamburger.css({
+				'position' : 'absolute'
+			})
+		}
+	});
+
 
 	// scroll down
 	$("#scroll-down").click(function() {
@@ -62,7 +77,7 @@ $(document).ready(function(){
 
 
 	// type.js
-	var typed = new Typed('.type', {
+	const typed = new Typed('.type', {
 	  strings: ["looove", "was born"],
 	  typeSpeed: 300,
 	  backSpeed: 100,
@@ -77,7 +92,7 @@ $(document).ready(function(){
 	    strings: ["npm install -g skills  ^1500\n", "running.. ` \n\n` `HTML5 \n` `CSS3 \n` `SASS \n` `Javascript \n` `jQuery \n` `React \n` `RWD \n` `Wordpress \n` ` \n` "],
 	   	typeSpeed: 100,
     	backSpeed: 0,
-    	loop: true
+    	loop: false
 	});
 
 
